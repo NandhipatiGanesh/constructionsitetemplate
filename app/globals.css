@@ -22,5 +22,76 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+}
+/* Body defaults → Be Vietnam Pro */
+body, p, span, a, strong, em, li, ul, ol, small, button, input, textarea {
+  font-family: var(--font-bevietnam);
+}
+
+/* All headings → Forum */
+h1, h2, h3, h4, h5, h6 {
+   font-family: var(--font-bevietnam);
+}
+
+/* Optional: better font smoothing */
+body {
+  -webkit-font-smoothing: antialiased;
+}
+a{
+  font-weight: 500;
+}
+
+/* global.css - minimal tweaks for Flip/ScrollTrigger state */
+.g-switch .g-item { filter: brightness(0.65); }
+.g-switch .g-item.g-item-xl { filter: brightness(0.5); z-index: 100; width: 100vw; height: 100vh; }
+.g-caption {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  color: #fff;
+  z-index: 101;
+  pointer-events: none;
+}
+
+/* when gallery has .g-switch (final state) we reveal caption */
+.g-switch .g-caption { opacity: 1; left: 0; bottom: 0; transform: none; }
+
+/* stack behavior approximations used by .g-stack galleries */
+.g-gallery.g-stack { display: grid; grid-template-columns: repeat(6, 1fr); gap: 2rem; padding: 2rem; }
+.g-gallery.g-stack .g-item { width: 25vw; height: 35vw; border-radius: 1.5vw; }
+
+/* preserve the body's loading overlay behavior like original */
+.js .loading::before,
+.js .loading::after {
+  content: "";
+  position: fixed;
+  z-index: 1000;
+}
+.js .loading::before {
+  top: 0; left: 0; width: 100%; height: 100%; background: #131417;
+}
+.js .loading::after {
+  top: 50%; left: 50%; width: 60px; height: 60px; margin: -30px 0 0 -30px;
+  border-radius: 50%; opacity: 0.4; background: #aaa;
+  animation: loaderAnim 0.7s linear infinite alternate forwards;
+}
+@keyframes loaderAnim { to { opacity: 1; transform: scale3d(0.5,0.5,1); } }
+
+/* fallback CSS if you aren't using Tailwind (put in globals.css) */
+.showcase-panel {
+  position: absolute;
+  left: 1.5rem;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  border-radius: 12px;
+  padding: 1rem;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 0 10px 30px rgba(15,23,42,0.08);
 }
