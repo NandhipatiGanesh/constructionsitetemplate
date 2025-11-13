@@ -5,7 +5,7 @@ export default function ConstructionGallery() {
     <section className="bg-[#fafafa] py-24">
       <div className="max-w-[1400px] mx-auto px-6">
         {/* Heading */}
-        <h1 className="text-4xl md:text-[52px] font-medium text-center text-[#000] mb-20 leading-tight">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[#000] mb-20 leading-tight">
           See how SLBuilders has transformed Hyderabad<br />
           <span className="text-[#6b6b6b]">projects with quality, safety and reliability</span>
         </h1>

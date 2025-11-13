@@ -15,7 +15,7 @@ export default function ServicesReviews() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-[#0a0a0a] leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0a0a0a] leading-tight">
             Why clients trust
             <br />SLBuilders
           </h1>

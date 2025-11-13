@@ -73,7 +73,7 @@ export default function FAQAccordion() {
       <div className="max-w-[1200px] mx-auto">
         {/* Heading */}
         <div className="text-center mb-16">
-          <h1 className="text-[40px] md:text-[64px] font-[400] text-[#1a1a1a]">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#000]">
             Have questions?
           </h1>
           <p className="mt-4 text-base md:text-lg text-[#666] max-w-[700px] mx-auto leading-7">

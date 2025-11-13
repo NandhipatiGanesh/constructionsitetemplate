@@ -36,9 +36,9 @@ export default function ShowcaseSection() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
             Showcasing the Beauty and Innovation of
-            <span className="block text-gray-400">Sustainable Agriculture Through Stunning Visuals</span>
+            <span className="block text-gray-400">Sustainable Construction Through Stunning Visuals</span>
           </h2>
         </div>
 

@@ -87,7 +87,7 @@
 /* Hero content — centered and above everything */
 .hero-content {
   position: relative;
-  z-index: 30;
+ 
   min-height: calc(100vh - 6rem); /* leave room for header if needed */
   display: flex;
   flex-direction: column;
