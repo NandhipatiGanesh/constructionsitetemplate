@@ -34,15 +34,17 @@ export default function ShowcaseSection() {
   return (
     <section className="w-full py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Heading */}
+        {/* Heading   services  aa bro 
+2 bhks Flats , Individual Buildings for sale .
+Constructing buildings with material and without material ,
+Renovation works , Commercial and residential.   make the title suitable*/}
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
-            Showcasing the Beauty and Innovation of
-            <span className="block text-gray-400">Sustainable Construction Through Stunning Visuals</span>
+          <h2 className="text-3xl font-bold text-gray-900">
+            Services
           </h2>
         </div>
 
-        {/* Grid layout: left column tall, right column top wide + two bottom smaller */}
+        {/* Grid layout: left column tall, right column top wide + two bottom smaller implement the grid layout  and show properly services section with layout   and image representational */}
         <motion.div
           className="grid grid-cols-12 gap-6"
           variants={containerVariants}

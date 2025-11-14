@@ -2,50 +2,50 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-black py-20 px-4 sm:px-6 lg:px-8 bg-cover bg-center"   style={{ backgroundImage: "/ChatGPT Image Nov 14, 2025, 12_46_38 AM.png')" }}>
+    <div className="min-h-screen bg-[#f7f7f7] py-20 px-4 sm:px-6 lg:px-8 bg-cover bg-center"   style={{ backgroundImage: "/ChatGPT Image Nov 14, 2025, 12_46_38 AM.png')" }}>
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           {/* Left Section */}
           <div className="flex flex-col justify-center">
-            <p className="text-sm font-semibold text-white tracking-wide uppercase mb-4">
+            <p className="text-sm font-semibold text-black tracking-wide uppercase mb-4">
               APPOINTMENT
             </p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4 leading-tight">
               Book Your Appointment for Better Construction
             </h1>
-            <p className="text-lg text-white mb-12">
+            <p className="text-lg text-black mb-12">
               Quick. Easy. Hassle-free.
             </p>
 
             <div className="space-y-6">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-6 h-6 text-white" />
+                  <MapPin className="w-6 h-6 text-black" />
                 </div>
-                <p className="text-white font-medium">
-                  123 Wellness Street, New York, NY 10001
+                <p className="text-black font-medium">
+                  Gandimysamma, Hyderabad. Telangana, India - 502319
                 </p>
               </div>
 
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-6 h-6 text-white" />
+                  <Phone className="w-6 h-6 text-black" />
                 </div>
-                <p className="text-white font-medium">+1 (800) 123-4567</p>
+                <p className="text-black font-medium">+91 96866 60444</p>
               </div>
 
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-6 h-6 text-white" />
+                  <Mail className="w-6 h-6 text-black" />
                 </div>
-                <p className="text-white font-medium">contact@flowdoc.com</p>
+                <p className="text-black font-medium">contact@shivalakshmibuilders.com</p>
               </div>
 
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center flex-shrink-0">
-                  <Clock className="w-6 h-6 text-white" />
+                  <Clock className="w-6 h-6 text-black" />
                 </div>
-                <p className="text-white font-medium">
+                <p className="text-black font-medium">
                   Mon — Sat: 8:00 AM — 8:00 PM
                 </p>
               </div>

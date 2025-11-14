@@ -19,7 +19,7 @@ export default function SuperHero() {
             className="hero-video"
           >
             <source
-              src="https://superpower-website.b-cdn.net/superpower-100-year-potential-video-hero.mp4"
+              src="/855253-uhd_3840_2160_30fps.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.
@@ -53,8 +53,7 @@ export default function SuperHero() {
             transition={{ delay: 0.3, duration: 0.8 }}
           >
             SLBuilders is a full-service construction firm specializing in residential, commercial,
-            and infrastructure projects across Hyderabad. From concept and design through
-            construction and handover, we deliver durable, efficient, and beautiful spaces that stand the test of time.
+            and infrastructure projects across Hyderabad.
           </motion.p>
 
           <motion.div

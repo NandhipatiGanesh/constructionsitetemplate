@@ -111,9 +111,11 @@ export default function Header() {
         )}
       </AnimatePresence>
 
-      <header className="relative z-20 flex justify-between items-center pl-6 md:pl-10 pr-2 md:pr-[10px] pt-[10px] pb-[10px] rounded-full transparent md:bg-black/80 backdrop-blur-md max-w-7xl mx-4 md:mx-auto mt-4">
+      <header className="relative z-20 flex justify-between items-center pl-4 pr-2 md:pr-[10px] pt-[10px] pb-[10px] rounded-full transparent md:bg-black/80 backdrop-blur-md max-w-7xl mx-4 md:mx-auto mt-4">
         {/* Logo */}
-        <div className="text-white font-extrabold text-xl">{headerData.logo}</div>
+        <div className="text-white font-extrabold text-xl flex items-center gap-2">
+          <img src="/logo.png" alt="shivalakshmibuilders.com" className=" w-10 h-10 rounded-full object-fit" />
+          {headerData.logo}</div>
 
         {/* Desktop Nav Links */}
         <nav className="hidden md:flex gap-6 text-white text-md font-medium relative">
@@ -144,7 +146,7 @@ export default function Header() {
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: 0.1, duration: 0.3 }}
-                        className="w-[320px] h-full rounded-3xl overflow-hidden"
+                        className="w-[320px] h-full rounded-xl overflow-hidden"
                       >
                         <a href={link.dropdown.image.link} className="block w-full h-full">
                           <img
@@ -219,7 +221,7 @@ export default function Header() {
             href="/login"
             className="hidden md:inline-block text-white text-sm hover:underline"
           >
-            +919391202148
+            +919686660444
           </motion.a>
           <motion.a
             href="/quote"
@@ -393,7 +395,7 @@ export default function Header() {
                   href="/login"
                   className="block w-full py-3 text-center text-gray-900 font-medium hover:text-orange-500"
                 >
-                  +919391202148
+                  +919686660444
                 </a>
               </motion.div>
             </motion.div>
@@ -401,34 +403,7 @@ export default function Header() {
         )}
       </AnimatePresence>
 
-      {/* Demo hero content to show effect */}
-      <div className="min-h-screen bg-gradient-to-b from-orange-100 via-orange-50 to-white flex items-center hidden">
-        <div className="max-w-5xl mx-auto p-8">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gray-900">
-            SLBuilders — Building Hyderabad's Future
-          </h1>
-          <p className="text-lg md:text-xl text-gray-700 mb-6 max-w-3xl">
-            SLBuilders is a full-service construction firm specializing in residential, commercial,
-            and infrastructure projects across Hyderabad. From concept and design through
-            construction and handover, we deliver durable, efficient, and beautiful spaces that
-            stand the test of time.
-          </p>
-          <div className="flex gap-4">
-            <a
-              href="#projects"
-              className="px-6 py-3 rounded-full bg-gray-900 text-white font-semibold hover:bg-gray-800 transition"
-            >
-              View Projects
-            </a>
-            <a
-              href="#contact"
-              className="px-6 py-3 rounded-full border border-gray-300 text-gray-900 font-medium hover:text-orange-500 transition"
-            >
-              Contact Us
-            </a>
-          </div>
-        </div>
-      </div>
+     
     </>
   );
 }

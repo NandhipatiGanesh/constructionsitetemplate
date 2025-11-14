@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
-import { Forum, Be_Vietnam_Pro } from "next/font/google";
+import { Lexend, Be_Vietnam_Pro } from "next/font/google";
 import "./globals.css";
 import ColorflowFooter from "./components/footer";
 
-const forum = Forum({
+// Lexend for Headings
+const lexend = Lexend({
   subsets: ["latin"],
-  weight: "400",
-  variable: "--font-forum",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-lexend",
 });
 
+// Be Vietnam Pro for Body
 const beVietnamPro = Be_Vietnam_Pro({
   subsets: ["latin", "vietnamese"],
   weight: ["300", "400", "500", "600", "700"],
@@ -17,7 +19,8 @@ const beVietnamPro = Be_Vietnam_Pro({
 
 export const metadata: Metadata = {
   title: "SLBuilders in Hyderabad",
-  description: "SLBuilders is a leading construction company in Hyderabad, delivering high-quality infrastructure, residential, and commercial projects.",
+  description:
+    "SLBuilders is a leading construction company in Hyderabad, delivering high-quality infrastructure, residential, and commercial projects.",
 };
 
 export default function RootLayout({
@@ -26,8 +29,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${forum.variable} ${beVietnamPro.variable}`}>
-      <body className="antialiased">
+    <html
+      lang="en"
+      className={`${lexend.variable} ${beVietnamPro.variable}`}
+    >
+      <body className="antialiased font-body">
         {children}
         <ColorflowFooter />
       </body>
