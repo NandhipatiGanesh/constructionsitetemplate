@@ -86,7 +86,7 @@ export default function SLBuildersFooter() {
 
             <motion.a
               href="mailto:contact@slbuilders.com"
-              className="flex items-center gap-4 bg-[#ebe8ff] rounded-2xl p-4 md:p-6 border border-[rgba(139,122,248,0.08)] hover:translate-x-1 transition-transform"
+              className="flex items-center gap-4 bg-[#ebe8ff] rounded-2xl p-4 md:p-6 border border-[rgba(139,122,248,0.08)] hover:translate-x-1 transition-transform overflow-hidden"
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
