@@ -6,7 +6,7 @@ import { Award, Users, Building, TrendingUp } from "lucide-react";
 
 export default function AboutSection() {
   return (
-    <section className="w-full py-24 bg-white">
+    <section className="w-full py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
