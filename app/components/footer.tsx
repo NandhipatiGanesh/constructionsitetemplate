@@ -32,8 +32,7 @@ export default function SLBuildersFooter() {
                   "conic-gradient(from 0deg, #ff6b6b, #ffd93d, #6bcf7f, #4d96ff, #9b59b6, #ff6b6b)",
               }}
             >
-              <div className="w-[28px] h-[28px] bg-white rounded-full absolute" />
-              <span className="absolute text-[18px] text-[#ff6b6b] font-semibold">S</span>
+              <img src="/slbuilders logo.jpg" alt="shivalakshmibuilders.com" className=" w-10 h-10 rounded-full object-cover object-top" />
             </div>
 
             <div>

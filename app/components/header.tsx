@@ -114,7 +114,7 @@ export default function Header() {
       <header className="relative z-20 flex justify-between items-center pl-4 pr-2 md:pr-[10px] pt-[10px] pb-[10px] rounded-full transparent md:bg-black/80 backdrop-blur-md max-w-7xl mx-4 md:mx-auto mt-4">
         {/* Logo */}
         <div className="text-white font-extrabold text-xl flex items-center gap-2">
-          <img src="/logo.png" alt="shivalakshmibuilders.com" className=" w-10 h-10 rounded-full object-fit" />
+          <img src="/slbuilders logo.jpg" alt="shivalakshmibuilders.com" className=" w-10 h-10 rounded-full object-cover object-top" />
           {headerData.logo}</div>
 
         {/* Desktop Nav Links */}
