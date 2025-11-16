@@ -85,7 +85,7 @@ export default function SLBuildersFooter() {
             </motion.a>
 
             <motion.a
-              href="mailto:contact@slbuilders.com"
+              href="mailto:Slbuilders1511@gmail.com"
               className="flex items-center gap-4 bg-[#ebe8ff] rounded-2xl p-4 md:p-6 border border-[rgba(139,122,248,0.08)] hover:translate-x-1 transition-transform overflow-hidden"
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -100,7 +100,7 @@ export default function SLBuildersFooter() {
 
               <div className="flex-1">
                 <div className="text-xs text-[#6b6b6b]">Email enquiries</div>
-                <div className="text-sm md:text-base font-semibold text-[#0f172a]">contact@shivalakshmibuilders.com</div>
+                <div className="text-sm md:text-base font-semibold text-[#0f172a]">Slbuilders1511@gmail.com</div>
               </div>
 
               <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center flex-shrink-0">
