@@ -23,7 +23,7 @@ export default function Contact() {
                   <MapPin className="w-6 h-6 text-black" />
                 </div>
                 <p className="text-black font-medium">
-                  Gandimysamma, Hyderabad. Telangana, India - 502319
+                  Gandimysamma, Hyderabad. Telangana, India - 500043
                 </p>
               </div>
 
@@ -31,14 +31,14 @@ export default function Contact() {
                 <div className="w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center flex-shrink-0">
                   <Phone className="w-6 h-6 text-black" />
                 </div>
-                <p className="text-black font-medium">+91 96866 60444</p>
+                <p className="text-black font-medium">+919686660444</p>
               </div>
 
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center flex-shrink-0">
                   <Mail className="w-6 h-6 text-black" />
                 </div>
-                <p className="text-black font-medium">contact@shivalakshmibuilders.com</p>
+                <p className="text-black font-medium">Slbuilders1511@gmail.com</p>
               </div>
 
               <div className="flex items-center gap-4">
@@ -93,7 +93,7 @@ export default function Contact() {
 
               <div>
                 <label htmlFor="department" className="block text-sm font-semibold text-gray-900 mb-2">
-                  Select Department
+                  Select Services
                 </label>
                 <select
                   id="department"
@@ -104,11 +104,11 @@ export default function Contact() {
                     backgroundPosition: 'right 1rem center',
                   }}
                 >
-                  <option>Choose a department</option>
-                  <option>Residential Construction</option>
-                  <option>Commercial Construction</option>
-                  <option>Renovation</option>
-                  <option>Architecture</option>
+                  <option>Choose a Service</option>
+                  <option>Buy a Building</option>
+                  <option>1BHK</option>
+                  <option>2BHK</option>
+                  <option>3BHK/VILLA</option>
                 </select>
               </div>
 

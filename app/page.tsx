@@ -12,7 +12,7 @@ import { AnimatedTestimonials } from "@/components/animated-testimonials";
 import WhatsAppFloat from './components/WhatsAppFloat';
 import CleanServicesSection from "./components/newservice";
 import AboutSection from "./components/about";
-
+import GoogleMapSection from "./components/maps";
 
 export default function Home() {
 
@@ -187,6 +187,7 @@ const testimonials = [
         offsetBottom={28}
         offsetRight={28}
       />
+      < GoogleMapSection />
     </>
-  );
+  );  
 }

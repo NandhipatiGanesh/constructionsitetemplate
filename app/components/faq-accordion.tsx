@@ -147,7 +147,7 @@ export default function FAQAccordion() {
                 <strong>About:</strong> 38 years+ experience in construction.
               </p>
               <p className="text-sm text-[#666] mt-1">
-                <strong>Services:</strong> New construction (with/without materials), renovation, commercial & residential.
+                <strong>Services:</strong> flats and individual buildings
               </p>
             </div>
 

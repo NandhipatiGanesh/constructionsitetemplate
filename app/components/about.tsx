@@ -90,13 +90,13 @@ export default function AboutSection() {
                 transition={{ duration: 0.3 }}
                 className="flex-shrink-0"
               >
-                <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center text-black text-2xl font-bold shadow-lg">
-                  VT
+                <div className="w-[50%] h-full rounded-full bg-gray-100 flex items-center justify-center text-black text-2xl font-bold ">
+                  <img src=""/>
                 </div>
               </motion.div>
 
               {/* Founder Info */}
-              <div className="flex-1">
+              <div className="flex-1 w-[50%]">
                 <h3 className="text-xl font-bold text-gray-900 mb-1">
                   Venky
                 </h3>
