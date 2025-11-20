@@ -147,7 +147,7 @@ export default function AboutSection() {
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                 className="w-full h-[500px] lg:h-[600px]  flex items-center justify-center bg-cover bg-center bg-no-repeat"
                   style={{
-    backgroundImage: "url('/pexels-500photos-com-15338-93400.jpg')"
+    backgroundImage: "url('/aboutimage.jpg')"
   }}
               >
               

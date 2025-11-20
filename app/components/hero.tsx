@@ -15,7 +15,7 @@ export default function SuperHero() {
             loop
             playsInline
             preload="auto"
-            poster="/city.png"
+            poster="/heropng.jpg"
             className="hero-video"
           >
             <source
