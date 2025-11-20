@@ -9,7 +9,7 @@ export default function SuperHero() {
       <div className="hero-gradient-overlay_wrapper lg:rounded-xl md:rounded-2xl rounded-none sm:rounded-xl">
         {/* Background video (z-0) */}
         <div className="hero-video-wrap">
-          <video
+          {/* <video
             autoPlay
             muted
             loop
@@ -23,7 +23,8 @@ export default function SuperHero() {
               type="video/mp4"
             />
             Your browser does not support the video tag.
-          </video>
+          </video> */}
+          <img src="/heropng.jpg"  alt="hero-bg" className="hero-video"/>
 
           {/* Gradient overlay (z-10) */}
           <div className="hero-gradient-overlay" />
@@ -37,7 +38,7 @@ export default function SuperHero() {
         {/* Content (z-30) */}
         <div className="hero-content">
           <motion.h1
-            className="hero-title"
+            className="hero-title text-black"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -52,8 +53,7 @@ export default function SuperHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            SLBuilders is a full-service construction firm specializing in residential, commercial,
-            and infrastructure projects across Hyderabad.
+            We sale appartmnet flats and buildings with high quality construction across Hyderabad.
           </motion.p>
 
           <motion.div
