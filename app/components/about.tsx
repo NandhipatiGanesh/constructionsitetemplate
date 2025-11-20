@@ -90,8 +90,8 @@ export default function AboutSection() {
                 transition={{ duration: 0.3 }}
                 className="flex-shrink-0"
               >
-                <div className="w-[50%] h-full rounded-full bg-gray-100 flex items-center justify-center text-black text-2xl font-bold ">
-                  <img src=""/>
+                <div className="w-[100%] h-[150px] rounded-full bg-gray-100 flex items-center justify-center text-black text-2xl font-bold ">
+                  <img src="/venky.jpg" className="w-full h-full rounded-lg" />
                 </div>
               </motion.div>
 
@@ -147,7 +147,7 @@ export default function AboutSection() {
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                 className="w-full h-[500px] lg:h-[600px]  flex items-center justify-center bg-cover bg-top bg-no-repeat"
                   style={{
-    backgroundImage: "url('/venky.jpg')"
+    backgroundImage: "url('/Apartment.jpg')"
   }}
               >
               
