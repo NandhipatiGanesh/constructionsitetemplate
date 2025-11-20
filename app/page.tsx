@@ -58,7 +58,7 @@ const myItems = [
       'A premium 32-floor residential tower located in Gachibowli, designed with modern architecture and smart-home features.',
     href: '#',
     image:
-      'https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&q=80&w=1080',
+      '/Apartment.jpg',
   },
   {
     id: '2',
