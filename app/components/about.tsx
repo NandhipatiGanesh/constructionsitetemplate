@@ -145,9 +145,9 @@ export default function AboutSection() {
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                className="w-full h-[500px] lg:h-[600px]  flex items-center justify-center bg-cover bg-center bg-no-repeat"
+                className="w-full h-[500px] lg:h-[600px]  flex items-center justify-center bg-cover bg-top bg-no-repeat"
                   style={{
-    backgroundImage: "url('/aboutimage.jpg')"
+    backgroundImage: "url('/venky.jpg')"
   }}
               >
               
