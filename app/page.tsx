@@ -79,73 +79,10 @@ export default function Home() {
       href: "#",
       video: "/service two video.mp4",
     },
-    {
-      id: "3",
-      title: "TechPark One – Commercial IT Space",
-      description:
-        "A state-of-the-art commercial IT tower in Hitech City with eco-friendly design and international safety standards.",
-      href: "#",
-      image:
-        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&q=80&w=1080",
-    },
-    {
-      id: "4",
-      title: "Lakeview Residency – Premium Waterfront Living",
-      description:
-        "A serene lakeside apartment community in Miyapur offering peaceful views and world-class lifestyle amenities.",
-      href: "#",
-      image:
-        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&q=80&w=1080",
-    },
-    {
-      id: "5",
-      title: "Emerald Towers – Smart Homes Project",
-      description:
-        "Next-generation smart homes in Narsingi with automated systems, rooftop leisure spaces, and green building certification.",
-      href: "#",
-      image:
-        "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&q=80&w=1080",
-    },
-    {
-      id: "6",
-      title: "Golden Square – Retail & Lifestyle Hub",
-      description:
-        "A mixed-use commercial complex in Jubilee Hills featuring branded stores, fine dining, and entertainment zones.",
-      href: "#",
-      image:
-        "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&q=80&w=1080",
-    },
+   
   ];
 
-  const testimonials = [
-    {
-      id: 1,
-      name: "Ravi Kumar",
-      role: "Site Engineer",
-      company: "Hyderabad Builders",
-      content: "The quality of construction and timely delivery is unmatched.",
-      rating: 5,
-      avatar: "/images/user1.jpg",
-    },
-    {
-      id: 2,
-      name: "Ayesha Rao",
-      role: "Architect",
-      company: "Skyline Designs",
-      content: "Their planning and execution are extremely professional.",
-      rating: 4,
-      avatar: "/images/user2.jpg",
-    },
-    {
-      id: 3,
-      name: "Vijay Reddy",
-      role: "Contractor",
-      company: "VR Construction",
-      content: "Very efficient team—recommended for big projects!",
-      rating: 5,
-      avatar: "/images/user3.jpg",
-    },
-  ];
+
 
   return (
     <>
@@ -177,14 +114,14 @@ export default function Home() {
         items={myItems}
       />
 
-      <AnimatedTestimonials
+      {/* <AnimatedTestimonials
         title="What Our Clients Say"
         subtitle="Here are some testimonials from our happy customers"
         badgeText="Top Rated Construction"
         testimonials={testimonials}
         autoRotateInterval={5000}
         className="my-20"
-      />
+      /> */}
 
       <FAQAccordion />
 

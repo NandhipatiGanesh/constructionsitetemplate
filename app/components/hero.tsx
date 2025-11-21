@@ -38,7 +38,7 @@ export default function SuperHero() {
         {/* Content (z-30) */}
         <div className="hero-content">
           <motion.h1
-            className="hero-title text-black"
+            className="hero-title text-black bg-black/60 text-black  px-4 py-2 rounded-md inline-block mt-4"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -48,7 +48,7 @@ export default function SuperHero() {
           </motion.h1>
 
           <motion.p
-            className="hero-sub"
+            className="hero-sub bg-black/60 text-black  px-4 py-2 rounded-md inline-block mt-4  "
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
