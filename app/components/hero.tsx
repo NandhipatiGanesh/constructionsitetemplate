@@ -63,7 +63,7 @@ export default function SuperHero() {
             transition={{ delay: 0.6, duration: 0.8 }}
           >
             <a
-              href="/signup"
+              href="/"
               className="cta-primary"
             >
               View Projects
