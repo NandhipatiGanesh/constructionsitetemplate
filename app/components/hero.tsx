@@ -56,7 +56,7 @@ export default function SuperHero() {
             We sale appartmnet flats and buildings with high quality construction across Hyderabad.
           </motion.p>
 
-          <motion.div
+          {/* <motion.div
             className="hero-ctas"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -69,7 +69,7 @@ export default function SuperHero() {
               View Projects
             </a>
             <span className="cta-note">✔ get in touch</span>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>

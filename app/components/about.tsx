@@ -85,7 +85,7 @@ export default function AboutSection() {
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
                 className="flex-shrink-0">
-                <div className="md:w-[100%] w-[110px] h-[150px] rounded-full bg-gray-100 flex items-center justify-center text-black text-2xl font-bold ">
+                <div className="md:w-[100%] w-[110px] h-[150px]  rounded-full bg-gray-100 flex items-center justify-center text-black text-2xl font-bold ">
                   <img src="/venky.jpg" className="w-full h-full rounded-lg" />
                 </div>
               </motion.div>
