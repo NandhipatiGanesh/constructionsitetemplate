@@ -16,7 +16,8 @@ export interface Gallery4Item {
   title: string;
   description: string;
   href: string;
-  image: string;
+  image?: string;   // now optional
+  video?: string;   // now allowed
 }
 
 export interface Gallery4Props {
@@ -72,6 +73,36 @@ const data = [
       "https://images.unsplash.com/photo-1550070881-a5d71eda5800?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDI3NzN8MHwxfGFsbHwxMjV8fHx8fHwyfHwxNzIzNDM1Mjk4fA&ixlib=rb-4.0.3&q=80&w=1080",
   },
 ];
+const renderMedia = (item: Gallery4Item) => {
+  if (item.video) {
+    return (
+      <video
+        src={item.video}
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute h-full w-full object-cover"
+      />
+    );
+  }
+
+  if (item.image) {
+    return (
+      <img
+        src={item.image}
+        alt={item.title}
+        className="absolute h-full w-full object-cover"
+      />
+    );
+  }
+
+  return (
+    <div className="absolute inset-0 flex items-center justify-center bg-muted text-muted-foreground">
+      No media available
+    </div>
+  );
+};
 
 const Gallery4 = ({
   title = "Case Studies",
@@ -104,9 +135,7 @@ const Gallery4 = ({
       <div className="container  w-[90%] mx-auto ">
         <div className="mb-8 flex items-end justify-between md:mb-14 lg:mb-16">
           <div className="flex flex-col gap-4">
-            <h2 className="text-3xl font-medium md:text-3xl">
-              {title}
-            </h2>
+            <h2 className="text-3xl font-medium md:text-3xl">{title}</h2>
             <p className="max-w-lg text-muted-foreground">{description}</p>
           </div>
           <div className="hidden shrink-0 gap-2 md:flex">
@@ -117,8 +146,7 @@ const Gallery4 = ({
                 carouselApi?.scrollPrev();
               }}
               disabled={!canScrollPrev}
-              className="disabled:pointer-events-auto"
-            >
+              className="disabled:pointer-events-auto">
               <ArrowLeft className="size-5" />
             </Button>
             <Button
@@ -128,8 +156,7 @@ const Gallery4 = ({
                 carouselApi?.scrollNext();
               }}
               disabled={!canScrollNext}
-              className="disabled:pointer-events-auto"
-            >
+              className="disabled:pointer-events-auto">
               <ArrowRight className="size-5" />
             </Button>
           </div>
@@ -144,22 +171,19 @@ const Gallery4 = ({
                 dragFree: true,
               },
             },
-          }}
-        >
+          }}>
           <CarouselContent className="ml-0 2xl:ml-[max(8rem,calc(50vw-700px))] 2xl:mr-[max(0rem,calc(50vw-700px))]">
             {items.map((item) => (
               <CarouselItem
                 key={item.id}
-                className="max-w-[320px] pl-[20px] lg:max-w-[360px]"
-              >
+                className="max-w-[320px] pl-[20px] lg:max-w-[360px]">
                 <a href={item.href} className="group rounded-xl">
                   <div className="group relative h-full min-h-[27rem] max-w-full overflow-hidden rounded-xl md:aspect-[5/4] lg:aspect-[16/9]">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="absolute h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
-                    />
+                    {/* 🔥 This replaces your <img /> */}
+                    {renderMedia(item)}
+
                     <div className="absolute inset-0 h-full bg-[linear-gradient(hsl(var(--primary)/0),hsl(var(--primary)/0.4),hsl(var(--primary)/0.8)_100%)] mix-blend-multiply" />
+
                     <div className="absolute inset-x-0 bottom-0 flex flex-col items-start p-6 text-primary-foreground md:p-8">
                       <div className="mb-2 pt-4 text-xl font-semibold md:mb-3 md:pt-4 lg:pt-4">
                         {item.title}

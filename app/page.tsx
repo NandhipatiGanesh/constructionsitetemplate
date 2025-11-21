@@ -75,10 +75,9 @@ export default function Home() {
       id: "2",
       title: "Palm County Villas – Gated Community Living",
       description:
-        "An exclusive gated villa community in Kokapet surrounded by landscaped gardens, clubhouses, and premium amenities.",
+        "G+2 with lift and moderate construction at suraksha meadows in gandimaisamma",
       href: "#",
-      image:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1080",
+      video: "/service two video.mp4",
     },
     {
       id: "3",
